@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "name": "student-collection-app",
+  "version": "1.0.0",
+  "description": "Practice project for arrays, objects, classes and modules in Node.js",
+  "main": "app.js"
+}
