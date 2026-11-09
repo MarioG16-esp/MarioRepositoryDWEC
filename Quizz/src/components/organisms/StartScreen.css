@@ -1,0 +1,8 @@
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+}
+.start-screen__title { font-size: var(--font-size-2xl); line-height: 1.15; }
+.start-screen__text { color: var(--color-muted); }

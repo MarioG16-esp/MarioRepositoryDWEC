@@ -1,0 +1,33 @@
+.answer-option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+}
+.answer-option:hover { border-color: var(--color-primary); }
+.answer-option:focus-within { outline: 3px solid var(--color-primary); outline-offset: 2px; }
+.answer-option__input { accent-color: var(--color-primary); }
+.answer-option__text { flex: 1; }
+
+.answer-option--selected {
+  background: var(--color-primary-soft);
+  border-color: var(--color-primary);
+}
+/* Van después de --selected para ganarle */
+.answer-option--correct {
+  background: var(--color-success-soft);
+  border-color: var(--color-success);
+}
+.answer-option--wrong {
+  background: var(--color-danger-soft);
+  border-color: var(--color-danger);
+}
+/* Con la pregunta cerrada: sin hover ni cursor de puntero */
+.answer-option--disabled { cursor: default; }
+.answer-option--disabled:hover { border-color: var(--color-border); }
+.answer-option--disabled.answer-option--correct:hover { border-color: var(--color-success); }
+.answer-option--disabled.answer-option--wrong:hover { border-color: var(--color-danger); }
